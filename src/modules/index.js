@@ -7,12 +7,12 @@ import * as wifiActions from './wifi';
 import * as tabActions from './tab';
 export {blueToothActions, wifiActions, tabActions};
 
-const DEBUG = true;
+// const DEBUG = true;
 const logger = createLogger();
 
 const middleware = [
   thunk,
-  DEBUG && logger,
+  __DEV__ && logger,
 ].filter(Boolean);
 
 const store = createStore(reducer, applyMiddleware(...middleware));
