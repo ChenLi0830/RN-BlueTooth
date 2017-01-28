@@ -1,0 +1,3 @@
+rootProject.name = 'RN_Wifi_BT'
+
+include ':app'
