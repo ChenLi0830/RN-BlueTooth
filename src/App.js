@@ -29,7 +29,12 @@ export default class App extends Component {
   
     ws.onmessage = (e) => {
       // a message was received
-      console.warn(e.data);
+      // console.warn(e.data);
+      if (e.data === '/bt/start'){
+        store.dispatch(blueToothActions.handleScanStart());
+      } else if (e.data === '/bt/stop'){
+        store.dispatch(blueToothActions.handleScanStop());
+      }
     };
   
     /*    const socket = io('http://sample-env.z8dyr5fr92.us-west-2.elasticbeanstalk.com:8080/', {//这里把ip从localhost改为wifi内网ip，是为了让手机端能访问到

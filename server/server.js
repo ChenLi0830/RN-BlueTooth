@@ -24,6 +24,16 @@ app.get('/bt/start', (req, res) => {
   res.send('Blue Tooth Start');
 });
 
+app.get('/bt/stop', (req, res) => {
+  wss.clients.forEach(function each(client) {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send('/bt/stop');
+    }
+  });
+  // ws.send();
+  res.send('Blue Tooth Stop');
+});
+
 // app.get('/bt/stop', (req, res) => {
 //   ws.send('/bt/stop');
 //   res.send('Blue Tooth Stop');
