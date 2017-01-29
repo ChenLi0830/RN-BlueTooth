@@ -1,12 +1,12 @@
+'use strict';
+
 const express = require('express');
-const http = require('http');
-const url = require('url');
-const WebSocket = require('ws');
 
-const app = express();
-
-const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
+let app = express();
+let server = require('http').createServer(app);
+const io = require('socket.io')(server);
+// const io = require('socket.io')(app);
+const fs = require('fs');
 
 app.get('/', (req, res) => {
   // res.send("You reached local server hosted by Chen's Macbook");
@@ -15,49 +15,47 @@ app.get('/', (req, res) => {
 });
 
 app.get('/bt/start', (req, res) => {
-  wss.clients.forEach(function each(client) {
-    if (client.readyState === WebSocket.OPEN) {
-      client.send('/bt/start');
-    }
-  });
-  // ws.send();
+  io.sockets.emit('/bt/start');
   res.send('Blue Tooth Start');
 });
 
 app.get('/bt/stop', (req, res) => {
-  wss.clients.forEach(function each(client) {
-    if (client.readyState === WebSocket.OPEN) {
-      client.send('/bt/stop');
-    }
-  });
-  // ws.send();
+  io.sockets.emit('/bt/stop');
   res.send('Blue Tooth Stop');
 });
 
-// app.get('/bt/stop', (req, res) => {
-//   ws.send('/bt/stop');
-//   res.send('Blue Tooth Stop');
-// });
+app.get('/wifi/start', (req, res) => {
+  io.sockets.emit('/wifi/start');
+  res.send('Wifi Start');
+});
 
-wss.on('connection', function connection(ws) {
-  console.log("a user is connected");
-  // const location = url.parse(ws.upgradeReq.url, true);
-  // console.log("connected, location", location);
-  // You might use location.query.access_token to authenticate or share sessions
-  // or ws.upgradeReq.headers.cookie (see http://stackoverflow.com/a/16395220/151312)
+app.get('/wifi/stop', (req, res) => {
+  io.sockets.emit('/wifi/stop');
+  res.send('Wifi Stop');
+});
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
   
-
-  // app.get('/bt/start', (req, res) => {
-  //   ws.send('/bt/start');
-  //   res.send('Blue Tooth Start');
-  // });
-  //
-  // app.get('/bt/stop', (req, res) => {
-  //   ws.send('/bt/stop');
-  //   res.send('Blue Tooth Stop');
-  // });
+  socket.on('bleList', (list) => {
+    console.log("start to write to bleList.txt - list", list);
+    list.forEach(device => fs.appendFile('bleList.txt', JSON.stringify(device)+'\n'));
+    // fs.appendFile('bleList.txt', JSON.stringify(list), function (err) {
+    //
+    // });
+  });
+  
+  socket.on('wifiList', () => {
+    console.log("start to write to wifiList.txt");
+    fs.appendFile('wifiList.txt', 'wifi data to append\n', function (err) {
+      
+    });
+  });
 });
 
-server.listen(8080, function listening() {
-  console.log('Listening on %d', server.address().port);
+const port = process.env.PORT || 3000;
+
+server.listen(port, () => {
+  console.log('app listening on port 3000!')
 });
+
