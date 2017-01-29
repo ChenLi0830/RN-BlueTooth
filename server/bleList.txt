@@ -1,0 +1,5 @@
+{"id":"F216F8F5-5369-2A3B-AD98-5843D14FFED6","rssi":-33,"advertising":{"kCBAdvDataIsConnectable":true},"name":"li’s MacBook Pro"}
+{"id":"EE3ACF4C-B982-4B07-8F23-575CE5AC5DE6","rssi":127,"advertising":{"kCBAdvDataIsConnectable":true},"name":"Apple TV"}
+{"id":"584645D8-A074-4A06-96A5-792E3A87E89C","rssi":-89,"advertising":{"kCBAdvDataIsConnectable":false}}
+{"id":"32FE7E41-075A-4265-9DFD-C23A0794788D","rssi":-78,"advertising":{"kCBAdvDataIsConnectable":true,"kCBAdvDataServiceData":{"FE9F":{"CDVType":"ArrayBuffer","data":"AAAAAAAAAAAAAAAAAAAAAAAAAAA="}},"kCBAdvDataServiceUUIDs":["FE9F"]}}
+{"id":"6E4C4806-0402-4F7D-B612-97DC665EC818","rssi":-93,"advertising":{"kCBAdvDataIsConnectable":true,"kCBAdvDataServiceData":{"180A":{"CDVType":"ArrayBuffer","data":"GACVpAM="}},"kCBAdvDataServiceUUIDs":["ADABFB00-6E7D-4601-BDA2-BFFAA68956BA"]},"name":"Flex 2"}

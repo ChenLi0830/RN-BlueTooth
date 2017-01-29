@@ -1,15 +1,11 @@
 // Action creator
-import {blueToothScanStop} from './blueTooth'
+import {handleScanStop} from './blueTooth'
 import {wifiScanStop} from './wifi'
 
 export const changeTab = (tab) => {
   return (dispatch) => {
-    dispatch(blueToothScanStop());
-    dispatch(wifiScanStop());
-    // return {
-    //   type: "CHANGE_TAB",
-    //   payload: tab,
-    // }
+    // dispatch(handleScanStop());
+    // dispatch(wifiScanStop());
     dispatch({
       type: "CHANGE_TAB",
       payload: tab,
@@ -19,7 +15,7 @@ export const changeTab = (tab) => {
 
 // reducer
 const tab = {
-  tab: 1, // or 2
+  tab: 0, // or 1
 };
 
 const reducer = (state = tab, action) => {

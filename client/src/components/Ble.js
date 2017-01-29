@@ -19,8 +19,9 @@ const Ble = (props) => {
   //     }, 300);
   //   }
   // };
+  const scanning = props.scanning;
   
-  if (!props.scanning) {
+  if (!scanning) {
     Toast.hide();
   } else {
     Toast.loading('扫描中...', 0, () => {
@@ -63,7 +64,7 @@ const styles = {
     // backgroundColor: '#f5f5f5',
     // height: 500,
     // width: 500
-    marginVertical: 10
+    marginVertical: 65
   },
   button: {
     margin: 10

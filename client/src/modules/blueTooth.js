@@ -38,7 +38,6 @@ export const handleScanStop = () => {
   }
 };
 
-
 export const init = () => {
   return (dispatch) => {
     console.log("start init");
