@@ -3,22 +3,12 @@ import {ScrollView, View, PermissionsAndroid} from 'react-native';
 // import BleManager from 'react-native-ble-manager';
 import {List, Toast} from 'antd-mobile';
 import {connect} from 'react-redux';
-import {blueToothActions} from '../modules';
 
 const Item = List.Item;
 const Brief = Item.Brief;
 
 const Ble = (props) => {
   
-  // const handleToggle = () => {
-  //   if (props.scanning){
-  //     props.blueToothScanStop();
-  //   } else {
-  //     setTimeout(() => {
-  //       props.handleScanStart();
-  //     }, 300);
-  //   }
-  // };
   const scanning = props.scanning;
   
   if (!scanning) {
@@ -40,11 +30,6 @@ const Ble = (props) => {
   
   return (
       <View style={app}>
-        {/*<Button style={button} type="primary"*/}
-        {/*onClick={() => handleToggle() }>*/}
-        {/*{"蓝牙扫描"}*/}
-        {/*</Button>*/}
-        
         <ScrollView>
           <List renderHeader={() => "扫描结果"}>
             <Item
@@ -76,13 +61,5 @@ const mapStateToProps = (state) => ({
   scanning: state.blueTooth.scanning,
 });
 
-const mapDispatchToProps = (dispatch) => {
-  // const handleDiscoverPeripheral = () => {};
-  return {
-    // handleScanStart: () => dispatch(blueToothActions.handleScanStart()),
-    // handleScanStop: () => dispatch(blueToothActions.handleScanStop()),
-    // init: () => dispatch(blueToothActions.init()),
-  }
-};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Ble);
+export default connect(mapStateToProps)(Ble);

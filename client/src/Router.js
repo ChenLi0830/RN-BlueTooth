@@ -19,15 +19,7 @@ const RouterComponent = ({bleInit, BLEHandleScanStart, BLEHandleScanStop, wifiHa
   bleInit();
   //sceneStyle={{paddingTop: 65}}
   return <Router sceneStyle={{paddingTop: 0}}>
-    {/*<Scene key="main"*/}
-           {/*component = {Main}*/}
-           {/*leftTitle = "开始"*/}
-           {/*onLeft = {() => handleScanStart()}*/}
-           {/*rightTitle = "停止"*/}
-           {/*onRight = {() => handleScanStop()}*/}
-           {/**/}
-    {/*/>*/}
-    
+
     <Scene key="myTabBar" tabs={true} hideNavBar tabBarStyle={style.tabBarStyle} initial >
       <Scene key="myTab1" title="蓝牙"
              component={Ble} icon={TabIcon}

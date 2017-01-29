@@ -12,8 +12,6 @@ import Router from './Router';
 import {blueToothActions, wifiActions} from './modules';
 window.navigator.userAgent = 'ReactNative';
 
-// Need to require instead of import so we can set the user agent first
-// This must be below your `window.navigator` hack above
 import io from 'socket.io-client';
 
 export default class App extends Component {
