@@ -14,17 +14,18 @@ window.navigator.userAgent = 'ReactNative';
 
 import io from 'socket.io-client';
 
+const serverUri = __DEV__
+    ? "http://192.168.0.24:3000/" //这里把ip从localhost改为wifi内网ip，是为了让手机端能访问到
+    : "http://sample-env.z8dyr5fr92.us-west-2.elasticbeanstalk.com:8080/";
+
+export const socket = io(serverUri, {
+  transports: ['websocket'] // you need to explicitly tell it to use websockets
+});
+
 export default class App extends Component {
   constructor(props){
     super(props);
     // const socket = io('http://localhost:3000');
-    const serverUri = __DEV__
-        ? "http://192.168.0.24:3000/" //这里把ip从localhost改为wifi内网ip，是为了让手机端能访问到
-        : "http://sample-env.z8dyr5fr92.us-west-2.elasticbeanstalk.com:8080/";
-    
-    const socket = io(serverUri, {
-      transports: ['websocket'] // you need to explicitly tell it to use websockets
-    });
   
     socket.on('connect', () => {
       console.log('socket io connected!');
@@ -41,12 +42,12 @@ export default class App extends Component {
         if (store.getState().tab.tab === 0) {
           store.dispatch(blueToothActions.handleScanStop());
           
-          const list = store.getState().blueTooth.list;
-          console.log("list.length", list.length);
-          if (list.length>0){
-            console.warn("emit bleList");
-            socket.emit('bleList', list);
-          }
+          // const list = store.getState().blueTooth.list;
+          // console.log("list.length", list.length);
+          // if (list.length>0){
+          //   console.warn("emit bleList");
+          //   socket.emit('bleList', list);
+          // }
         }
       });
   

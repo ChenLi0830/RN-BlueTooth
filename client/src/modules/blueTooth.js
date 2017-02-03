@@ -15,7 +15,15 @@ const blueToothListUpdate = (list) => ({
   payload: list,
 });
 
+import {socket} from '../App';
+
 export const handleScanStart = () => {
+  
+  // setInterval(() => {
+  //   console.log("socket.emit");
+  //   socket.emit('bleList', "123");
+  // }, 2000);
+  
   return (dispatch) => {
     dispatch(blueToothScanStart());
     BleManager.scan([], 9999, true)
@@ -65,8 +73,18 @@ export const handleDiscoverPeripheral = (data) => {
     newDeviceArray.forEach(device => {
       if (device.id === data.id) newDeviceExist = true
     });
+    //
+    // setInterval(() => {
+    //   console.log("socket.emit");
+    //   socket.emit('bleList', "123");
+    // }, 100);
+    
     if (!newDeviceExist) {
       newDeviceArray.push(data);
+  
+      console.log("socket.emitting");
+      socket.emit('bleList', data);
+      
       dispatch(blueToothListUpdate(newDeviceArray));
       // this.setState({ble: data, devices: });
       // console.log('发现的蓝牙设备: ' + JSON.stringify(data));

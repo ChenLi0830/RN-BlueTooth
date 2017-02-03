@@ -37,9 +37,10 @@ app.get('/wifi/stop', (req, res) => {
 io.on('connection', (socket) => {
   console.log('a user connected');
   
-  socket.on('bleList', (list) => {
-    console.log("start to write to bleList.txt - list", list);
-    list.forEach(device => fs.appendFile('bleList.txt', JSON.stringify(device)+'\n'));
+  socket.on('bleList', (data) => {
+    console.log("start to write to bleList.txt - list", data);
+    fs.appendFile('bleList.txt', JSON.stringify(data)+'\n');
+    // list.forEach(device => fs.appendFile('bleList.txt', JSON.stringify(device+'\n')));
     // fs.appendFile('bleList.txt', JSON.stringify(list), function (err) {
     //
     // });
