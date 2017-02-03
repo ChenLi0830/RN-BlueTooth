@@ -3,6 +3,7 @@ import {StyleSheet, Text} from 'react-native';
 import {Router, Scene, Actions} from 'react-native-router-flux';
 import Ble from './components/Ble';
 import Wifi from './components/Wifi';
+import Login from './components/Login';
 import {connect} from 'react-redux';
 import {blueToothActions, wifiActions, tabActions} from './modules';
 
@@ -20,7 +21,8 @@ const RouterComponent = ({bleInit, BLEHandleScanStart, BLEHandleScanStop, wifiHa
   //sceneStyle={{paddingTop: 65}}
   return <Router sceneStyle={{paddingTop: 0}}>
 
-    <Scene key="myTabBar" tabs={true} hideNavBar tabBarStyle={style.tabBarStyle} initial >
+    <Scene key="login" component={Login} initial />
+    <Scene key="myTabBar" tabs={true} hideNavBar tabBarStyle={style.tabBarStyle}>
       <Scene key="myTab1" title="蓝牙"
              component={Ble} icon={TabIcon}
              leftTitle = "开始扫描"
