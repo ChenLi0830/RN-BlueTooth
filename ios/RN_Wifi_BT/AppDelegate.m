@@ -16,6 +16,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  A0Theme *myTheme = [[A0Theme alloc] init];
+  [myTheme registerColor:[UIColor colorWithRed:0.212 green:0.647 blue:0.51 alpha:1] forKey:A0ThemePrimaryButtonNormalColor];
+  [[A0Theme sharedInstance] registerTheme:myTheme];
+  
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];

@@ -8,6 +8,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <A0Theme.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
