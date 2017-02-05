@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* RN_Wifi_BTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_Wifi_BTTests.m */; };
+		1129F0E56BBA29F05158A58E /* libPods-RN_Wifi_BT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6E84DE3DDF3F6A2F188AEA /* libPods-RN_Wifi_BT.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -22,6 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		359B342061444F31A889E709 /* libA0RNLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515676E0442941DC8475E6B3 /* libA0RNLock.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		746B6C911E3C0418009994A8 /* libBleManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 746B6C901E3C03FB009994A8 /* libBleManager.a */; };
 		746B6C921E3C080E009994A8 /* libBleManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 746B6C901E3C03FB009994A8 /* libBleManager.a */; };
@@ -29,6 +31,7 @@
 		747843361E44438F00DDB021 /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 747843341E44438F00DDB021 /* AccountKitStrings.bundle */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		EE9AB05EEECE4B78A09FC6B1 /* libRNAccountKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B140F91EDB149409F896DCC /* libRNAccountKit.a */; };
+		FCAC7CC425886F2502D088F0 /* libPods-RN_Wifi_BTTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A810B4727A7D4225B35389 /* libPods-RN_Wifi_BTTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +217,69 @@
 			remoteGlobalIDString = D2C7C6901CD1552900C9B392;
 			remoteInfo = RNAccountKit;
 		};
+		747843741E45595500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085E23ABF4D54BFE89ED5BD2 /* A0RNLock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F0499EE1CAE9F4A006F6C05;
+			remoteInfo = A0RNLock;
+		};
+		747843AC1E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3BD9F082671F55F0935A24AC4C7FAF9;
+			remoteInfo = AFNetworking;
+		};
+		747843AE1E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED31C9BD00DAE794C39407B27A8B89E0;
+			remoteInfo = Lock;
+		};
+		747843B01E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A080687682DBA19185B87A304FA3041;
+			remoteInfo = "Lock-Auth0";
+		};
+		747843B21E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56D5CE6FCD69B99736A4AC9666D97484;
+			remoteInfo = Masonry;
+		};
+		747843B41E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3BA72134D9F2DCE35AFD770C394B9AB5;
+			remoteInfo = "Pods-RN_Wifi_BT";
+		};
+		747843B61E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F07976E4B8F53239512846442BF88D6;
+			remoteInfo = "Pods-RN_Wifi_BTTests";
+		};
+		747843B81E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25A279E592B0C897ED382D85F8CD9C4B;
+			remoteInfo = SimpleKeychain;
+		};
+		747843BA1E45923500DDB021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7DEDBDAD6AF7DAF8F6A326AFAA60887;
+			remoteInfo = TouchIDAuth;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -240,6 +306,7 @@
 		00E356EE1AD99517003FC87E /* RN_Wifi_BTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RN_Wifi_BTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RN_Wifi_BTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RN_Wifi_BTTests.m; sourceTree = "<group>"; };
+		085E23ABF4D54BFE89ED5BD2 /* A0RNLock.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = A0RNLock.xcodeproj; path = "../node_modules/react-native-lock/ios/A0RNLock.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RN_Wifi_BT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_Wifi_BT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,14 +317,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RN_Wifi_BT/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RN_Wifi_BT/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		26A810B4727A7D4225B35389 /* libPods-RN_Wifi_BTTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_Wifi_BTTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		515676E0442941DC8475E6B3 /* libA0RNLock.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libA0RNLock.a; sourceTree = "<group>"; };
 		5B140F91EDB149409F896DCC /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAccountKit.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		60F6003C3F04BE653AAC86B7 /* Pods-RN_Wifi_BT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Wifi_BT.release.xcconfig"; path = "Pods/Target Support Files/Pods-RN_Wifi_BT/Pods-RN_Wifi_BT.release.xcconfig"; sourceTree = "<group>"; };
 		746B6C8B1E3C03FA009994A8 /* BleManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BleManager.xcodeproj; path = "../node_modules/react-native-ble-manager/ios/BleManager.xcodeproj"; sourceTree = "<group>"; };
 		747843331E44438F00DDB021 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
 		747843341E44438F00DDB021 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
+		7478439F1E45923500DDB021 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7FE841302C5CE54980A46C84 /* Pods-RN_Wifi_BT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Wifi_BT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RN_Wifi_BT/Pods-RN_Wifi_BT.debug.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		A541CF835DD245E0B35126EC /* RNAccountKit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAccountKit.xcodeproj; path = "../node_modules/react-native-facebook-account-kit/ios/RNAccountKit.xcodeproj"; sourceTree = "<group>"; };
+		B561FFCF68F32EE636F7FE67 /* Pods-RN_Wifi_BTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Wifi_BTTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RN_Wifi_BTTests/Pods-RN_Wifi_BTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3281F42321701ED4420E67D /* Pods-RN_Wifi_BTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Wifi_BTTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RN_Wifi_BTTests/Pods-RN_Wifi_BTTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF6E84DE3DDF3F6A2F188AEA /* libPods-RN_Wifi_BT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_Wifi_BT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +342,7 @@
 			files = (
 				746B6C911E3C0418009994A8 /* libBleManager.a in Frameworks */,
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				FCAC7CC425886F2502D088F0 /* libPods-RN_Wifi_BTTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +364,8 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				EE9AB05EEECE4B78A09FC6B1 /* libRNAccountKit.a in Frameworks */,
+				359B342061444F31A889E709 /* libA0RNLock.a in Frameworks */,
+				1129F0E56BBA29F05158A58E /* libPods-RN_Wifi_BT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +480,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5D3BA27CBA3723D335698A89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF6E84DE3DDF3F6A2F188AEA /* libPods-RN_Wifi_BT.a */,
+				26A810B4727A7D4225B35389 /* libPods-RN_Wifi_BTTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +514,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		747843711E45595500DDB021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747843751E45595500DDB021 /* libA0RNLock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		747843A01E45923500DDB021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747843AD1E45923500DDB021 /* libAFNetworking.a */,
+				747843AF1E45923500DDB021 /* libLock.a */,
+				747843B11E45923500DDB021 /* Auth0.bundle */,
+				747843B31E45923500DDB021 /* libMasonry.a */,
+				747843B51E45923500DDB021 /* libPods-RN_Wifi_BT.a */,
+				747843B71E45923500DDB021 /* libPods-RN_Wifi_BTTests.a */,
+				747843B91E45923500DDB021 /* libSimpleKeychain.a */,
+				747843BB1E45923500DDB021 /* libTouchIDAuth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +549,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7478439F1E45923500DDB021 /* Pods.xcodeproj */,
 				746B6C8B1E3C03FA009994A8 /* BleManager.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -452,6 +563,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				A541CF835DD245E0B35126EC /* RNAccountKit.xcodeproj */,
+				085E23ABF4D54BFE89ED5BD2 /* A0RNLock.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -472,6 +584,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RN_Wifi_BTTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				88A914CE8644863410C67AEF /* Pods */,
+				5D3BA27CBA3723D335698A89 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -486,6 +600,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		88A914CE8644863410C67AEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FE841302C5CE54980A46C84 /* Pods-RN_Wifi_BT.debug.xcconfig */,
+				60F6003C3F04BE653AAC86B7 /* Pods-RN_Wifi_BT.release.xcconfig */,
+				B561FFCF68F32EE636F7FE67 /* Pods-RN_Wifi_BTTests.debug.xcconfig */,
+				C3281F42321701ED4420E67D /* Pods-RN_Wifi_BTTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -493,9 +618,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RN_Wifi_BTTests" */;
 			buildPhases = (
+				85D31B6CBC46DD6F175668AA /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				AAB2ECB8975646AFA9501809 /* [CP] Embed Pods Frameworks */,
+				6C6756FDBB12DB7CB66AD7E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -511,10 +639,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RN_Wifi_BT" */;
 			buildPhases = (
+				FBB90F688A5430D9CDCA27F5 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				AC2EB9614DB302B1D0653F45 /* [CP] Embed Pods Frameworks */,
+				C12C9E6009D37E3B55285397 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -557,8 +688,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 747843711E45595500DDB021 /* Products */;
+					ProjectRef = 085E23ABF4D54BFE89ED5BD2 /* A0RNLock.xcodeproj */;
+				},
+				{
 					ProductGroup = 746B6C8C1E3C03FA009994A8 /* Products */;
 					ProjectRef = 746B6C8B1E3C03FA009994A8 /* BleManager.xcodeproj */;
+				},
+				{
+					ProductGroup = 747843A01E45923500DDB021 /* Products */;
+					ProjectRef = 7478439F1E45923500DDB021 /* Pods.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -793,6 +932,69 @@
 			remoteRef = 747843311E44410100DDB021 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		747843751E45595500DDB021 /* libA0RNLock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libA0RNLock.a;
+			remoteRef = 747843741E45595500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843AD1E45923500DDB021 /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = 747843AC1E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843AF1E45923500DDB021 /* libLock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLock.a;
+			remoteRef = 747843AE1E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843B11E45923500DDB021 /* Auth0.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Auth0.bundle;
+			remoteRef = 747843B01E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843B31E45923500DDB021 /* libMasonry.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMasonry.a;
+			remoteRef = 747843B21E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843B51E45923500DDB021 /* libPods-RN_Wifi_BT.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-RN_Wifi_BT.a";
+			remoteRef = 747843B41E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843B71E45923500DDB021 /* libPods-RN_Wifi_BTTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-RN_Wifi_BTTests.a";
+			remoteRef = 747843B61E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843B91E45923500DDB021 /* libSimpleKeychain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSimpleKeychain.a;
+			remoteRef = 747843B81E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		747843BB1E45923500DDB021 /* libTouchIDAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTouchIDAuth.a;
+			remoteRef = 747843BA1E45923500DDB021 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -844,6 +1046,96 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
+		6C6756FDBB12DB7CB66AD7E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RN_Wifi_BTTests/Pods-RN_Wifi_BTTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85D31B6CBC46DD6F175668AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB2ECB8975646AFA9501809 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RN_Wifi_BTTests/Pods-RN_Wifi_BTTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2EB9614DB302B1D0653F45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RN_Wifi_BT/Pods-RN_Wifi_BT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C12C9E6009D37E3B55285397 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RN_Wifi_BT/Pods-RN_Wifi_BT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB90F688A5430D9CDCA27F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -889,6 +1181,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B561FFCF68F32EE636F7FE67 /* Pods-RN_Wifi_BTTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = CWMWCR383F;
@@ -902,6 +1195,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RN_Wifi_BT.app/RN_Wifi_BT";
@@ -910,6 +1204,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3281F42321701ED4420E67D /* Pods-RN_Wifi_BTTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -920,6 +1215,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RN_Wifi_BT.app/RN_Wifi_BT";
@@ -928,6 +1224,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE841302C5CE54980A46C84 /* Pods-RN_Wifi_BT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -951,6 +1248,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F6003C3F04BE653AAC86B7 /* Pods-RN_Wifi_BT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1009,6 +1307,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lc++";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1043,6 +1342,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lc++";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RN_Wifi_BT</string>
+    <string name="fb_app_id">1389684387729348</string>
+    <string name="ak_client_token">22f58b1e9f3c0ba93df6292269631491</string>
 </resources>
